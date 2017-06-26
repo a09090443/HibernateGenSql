@@ -9,5 +9,6 @@
         <property name="hibernate.connection.url">jdbc:mysql://192.168.0.120/dev_data</property>
         <property name="hibernate.connection.username">dev</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.default_catalog">dev_data</property>
     </session-factory>
 </hibernate-configuration>

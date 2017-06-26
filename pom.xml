@@ -12,7 +12,8 @@
 		<proxool.version>0.9.1</proxool.version>
 		<log4j.version>1.2.17</log4j.version>
 		<commons-cli.version>1.4</commons-cli.version>
-		<commons-lang3.version>3.4</commons-lang3.version>
+		<commons-configuration2.version>2.0</commons-configuration2.version>
+		<commons-beanutils.version>1.9.3</commons-beanutils.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -87,10 +88,18 @@
 			<version>${commons-cli.version}</version>
 		</dependency>
 
+		<!-- Commons-configuration2 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>${commons-lang3.version}</version>
+			<artifactId>commons-configuration2</artifactId>
+			<version>${commons-configuration2.version}</version>
+		</dependency>
+
+		<!-- Commons-beanutils.version -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>${commons-beanutils.version}</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -129,7 +138,7 @@
 					</descriptorRefs>
 					<archive>
 						<manifest>
-							<mainClass></mainClass>
+							<mainClass>com.localhost.main.Main</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
