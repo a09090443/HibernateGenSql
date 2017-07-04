@@ -30,12 +30,12 @@ public class AssembleSqlUtil {
 					}
 					if (methodType.toLowerCase().equals("string")) {
 						columns = columns + anno.name() + ",";
-						if(anno.nullable()){
+						if(anno.nullable() && StringUtils.isBlank(value)){
 							values = values + "NULL,";
 						}else{
 							values = values + "'" + value + "',";
 						}
-					} else if (methodType.toLowerCase().equals("integer") || methodType.equals("int") || methodType.equals("short")) {
+					} else if (methodType.toLowerCase().equals("integer") || methodType.equals("int") || methodType.toLowerCase().equals("short") || methodType.toLowerCase().equals("byte")) {
 						columns = columns + anno.name() + ",";
 						if(StringUtils.isBlank(value)){
 							values = values + "NULL,";

@@ -132,7 +132,7 @@ public class FileUtil {
 			// tem.getParentFile().setWritable(true);
 			tem.mkdirs();// 创建目录
 		}
-		
+
 		BufferedWriter bw = new BufferedWriter(new FileWriter(fileName, rewrite));
 		try {
 			for (String d : data) {
@@ -526,4 +526,5 @@ public class FileUtil {
 		br.close();
 		return txt;
 	}
+
 }
